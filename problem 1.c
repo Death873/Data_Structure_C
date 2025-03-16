@@ -14,7 +14,7 @@ void peek()
     printf("STACK NOT AVAILABLE\n");
     else
     {
-        printf("%d",top->data);
+        printf("%d\n",top->data);
     }
 }
 node *PUSH(int data)
@@ -40,7 +40,7 @@ void POP()
     node *temp;
     if(top==NULL)
     {
-       printf("WRONG CHOICE \nYOU CANNOT DELETE A NODE WHICH IS NOT CREATED\n");
+       printf("STACK NOT AVAILABLE\n");
        return ;
     }
     else if(top->link==NULL)
